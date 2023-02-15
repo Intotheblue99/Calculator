@@ -1,0 +1,45 @@
+.whole {
+    height: 500px;
+    width: 400px;
+    background-color: aqua;
+    border-radius: 20px;
+    margin: auto;
+    text-align: -webkit-center;
+    margin-top: 200px;
+}
+.output {
+    height: 150px;
+    width: 350px;
+    background-color: whitesmoke;
+    display: inline-table;
+    transform: translateY(15px);
+}
+#op1 {
+    transform: translateY(0px);
+    font-size: 50px;
+}
+#op2 {
+    transform: translateY(30px);
+    font-size: 50px;
+}
+.clickables {
+    top: 43%;
+    position: sticky;
+}
+.row1 {
+    position: relative;
+    margin: 2%;
+    
+}
+.row2 {
+    position: relative;
+    margin: 2%;
+}
+.row4 {
+    position: relative;
+    margin: 2%;
+}
+.but {
+    padding: 20px;
+    font-size: 20px;
+}
