@@ -1,3 +1,4 @@
+
 let input = document.querySelector('.current-operand');
 let output = document.querySelector('.previous-operand');
 
@@ -46,8 +47,7 @@ function equations(event) {
         compute = num1+operator;
         input.textContent = compute;
     };
-}
-
+};
 
 const add = function(num1, num2) {
     console.log('hiroshima')
@@ -59,6 +59,15 @@ const add = function(num1, num2) {
     num2=[];
 };
 
+const subtract = function(num1, num2) {
+    let difference = parseInt(num1) - parseInt(num2);
+    output.textContent = compute + num2 + '=';
+    num = difference;
+    input.textContent = difference;
+    num2=[];
+};
+
+
 
 function master() {
     console.log(num1,operator,num2);
@@ -67,8 +76,9 @@ function master() {
     //Make switch statements//
     if (compute.includes('+')) {
         add(num1,num2);
-    } else {
-        console.log('bruh...')
-    }
+    };
+    if(compute.includes('-')) {
+        subtract(num1,num2)
+    }; 
   
 };
