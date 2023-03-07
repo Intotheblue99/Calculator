@@ -50,9 +50,7 @@ function equations(event) {
 };
 
 const add = function(num1, num2) {
-    console.log('hiroshima')
     let sum = parseInt(num1) + parseInt(num2);
-    console.log(sum);
     output.textContent = compute + num2 + '=';
     num = sum;
     input.textContent = sum;
@@ -70,9 +68,6 @@ const subtract = function(num1, num2) {
 
 
 function master() {
-    console.log(num1,operator,num2);
-    console.log(operator);
-    console.log(compute)
     //Make switch statements//
     if (compute.includes('+')) {
         add(num1,num2);
