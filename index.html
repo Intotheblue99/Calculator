@@ -11,35 +11,35 @@
 
 <div class="whole">
     <div class="output">
-        <div id="op1" class="previous-operand">previous</div>
-        <div id="op2" class="current-operand">current</div>
+        <div id="op1" class="previous-operand"></div>
+        <div id="op2" class="current-operand"></div>
     </div>
   <div class="clickables">
     <div class="row1">
-    <button class="but">÷</button>
-    <button class="but">1</button>
-    <button class="but">2</button>
-    <button class="but">3</button>
-    <button class="but">DEL</button>
+    <button class="but" value=/ onclick="pressed(event)">÷</button>
+    <button class="but" value=1 onclick="pressed(event)">1</button>
+    <button class="but" value=2 onclick="pressed(event)">2</button>
+    <button class="but" value=3 onclick="pressed(event)">3</button>
+    <button class="but" id="back" value=del onclick="pressed(event)">DEL</button>
     </div>
     <div class="row2">
-    <button class="but">x</button>
-    <button class="but">4</button>
-    <button class="but">5</button>
-    <button class="but">6</button>
+    <button class="but" value=* onclick="pressed(event)">x</button>
+    <button class="but" value=4 onclick="pressed(event)">4</button>
+    <button class="but" value= 5 onclick="pressed(event)">5</button>
+    <button class="but" value=6 onclick="pressed(event)">6</button>
     </div>
     <div class="row3">
-    <button class="but">+</button>
-    <button class="but">7</button>
-    <button class="but">8</button>
-    <button class="but">9</button>
-    <button class="but">.</button>
+    <button class="but" id="+"  onclick="equations(event)">+</button>
+    <button class="but" value=7 onclick="pressed(event)">7</button>
+    <button class="but" value=8 onclick="pressed(event)">8</button>
+    <button class="but" value=9 onclick="pressed(event)">9</button>
+    <button class="but" value=. onclick="pressed(event)">.</button>
     </div>
     <div class="row4">
-    <button class="but">-</button>
-    <button class="but">0</button>
-    <button class="but">=</button>
-    <button class="but">AC</button>
+    <button class="but" value=- onclick="pressed(event)">-</button>
+    <button class="but" value=0 onclick="pressed(event)">0</button>
+    <button class="but" value='=' onclick="master()">=</button>
+    <button class="but" id="clear" value=del onclick="pressed(event)">AC</button>
     </div>
   </div>
 
