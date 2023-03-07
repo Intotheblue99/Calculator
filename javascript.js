@@ -58,10 +58,18 @@ const add = function(num1, num2) {
 };
 
 const subtract = function(num1, num2) {
-    let difference = parseInt(num1) - parseInt(num2);
+    let difference = parseFloat(num1) - parseFloat(num2);
     output.textContent = compute + num2 + '=';
-    num = difference;
+    num = parseFloat(difference);
     input.textContent = difference;
+    num2=[];
+};
+
+const multiply = function(num1, num2) {
+    let product = parseInt(num1) * parseInt(num2);
+    output.textContent = compute + num2 + '=';
+    num = product;
+    input.textContent = product;
     num2=[];
 };
 
@@ -75,5 +83,8 @@ function master() {
     if(compute.includes('-')) {
         subtract(num1,num2)
     }; 
+    if (compute.includes('x')) {
+        multiply(num1,num2)
+    };
   
 };
