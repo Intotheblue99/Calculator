@@ -4,7 +4,6 @@ let output = document.querySelector('.previous-operand');
 
 let backspace = document.getElementById('#back');
 
-
 // let compute = [num1,operator,num2];
 
 // const populate = document.querySelectorAll('.but');
@@ -26,15 +25,10 @@ let num2 =[];
 let compute = [num1,operator,num2];
 let isClicked = false;
 
-
 function pressed(event) {
     let values = event.target.value;
     num += values;
     input.textContent = num;
-    // if (num.includes('-')) {
-    //     num1 = num;
-    // };
-    
     if(isClicked===true){
         num2 += values;
         input.textContent = compute + num2;
@@ -78,8 +72,13 @@ const multiply = function(num1, num2) {
     num2=[];
 };
 
-
-
+const divide = function(num1, num2) {
+    let quotient = parseFloat(num1) / parseFloat(num2);
+    output.textContent = compute + num2 + '=';
+    num = quotient;
+    input.textContent = quotient;
+    num2=[];
+};
 
 function master() {
     //Make switch statements//
